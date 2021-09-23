@@ -37,7 +37,12 @@ function Details(props: {requestPermit: Function, permit: any, match: {params: {
   
   const handleRoute = () =>{ 
     history.push(`/`);
-  }
+  };
+
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
 
   return (
     <div className="details">
@@ -109,7 +114,7 @@ function Details(props: {requestPermit: Function, permit: any, match: {params: {
               <FaRegMoneyBillAlt/>{'  '}REPORTED COST
             </div>
             <div className="detail-body">
-              {props.permit.reported_cost}
+              {formatter.format(props.permit.reported_cost)}
             </div>
           </div>
           <div className="detail">
@@ -117,7 +122,7 @@ function Details(props: {requestPermit: Function, permit: any, match: {params: {
               <FaRegMoneyBillAlt/>{'  '}TOTAL FEE
             </div>
             <div className="detail-body">
-              {props.permit.total_fee}
+              {formatter.format(props.permit.total_fee)}
             </div>
           </div>
           <div className="detail">

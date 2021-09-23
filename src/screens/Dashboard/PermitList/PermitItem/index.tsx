@@ -15,6 +15,10 @@ function PermitItem(props: {permit: any}) {
     history.push(`/details/${props.permit.id}`);
   }
   
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
 
   return (
     <tr className="permit-row" onClick={handleRoute}>
@@ -28,10 +32,10 @@ function PermitItem(props: {permit: any}) {
         <p>{props.permit.permit_type ? props.permit.permit_type : '-'}</p>
       </td>
       <td className="item">
-        <p>{props.permit.reported_cost ? props.permit.reported_cost : '-'}</p>
+        <p>{props.permit.reported_cost ? formatter.format(props.permit.reported_cost) : '-'}</p>
       </td>
       <td className="item">
-        <p>{props.permit.total_fee ? props.permit.total_fee : '-'}</p>
+        <p>{props.permit.total_fee ? formatter.format(props.permit.total_fee) : '-'}</p>
       </td>
       <td className="item">
         <p>{props.permit.issue_date ? format(new Date(props.permit.issue_date), 'dd MMMM yyyy') : '-'}</p>
