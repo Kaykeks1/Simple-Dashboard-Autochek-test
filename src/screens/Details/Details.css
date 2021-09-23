@@ -1,0 +1,55 @@
+.details {
+    margin: 30px 50px;
+}
+.details-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.details-subtitle {
+    /* font-weight: 100; */
+    font-size: 18px;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+}
+
+.details-container {
+    box-shadow: 0 1px 10px rgb(0 0 0 / 0.2);
+    padding: 50px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+.top-row {
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: space-between;
+}
+.permit-id {
+    font-size: 22px;
+}
+
+.details-date {
+    display: flex;
+}
+
+.details-date .title {
+    font-weight: bold;
+    width: 150px;
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail {
+    width: 300px;
+}
+
+.detail-title {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+}

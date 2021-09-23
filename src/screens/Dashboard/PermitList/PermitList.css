@@ -1,0 +1,25 @@
+.permit-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto 30px auto;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 0.2);
+    border-radius: 8px;
+    padding: 10px;
+}
+.permit-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border-collapse:separate; 
+    border-spacing: 0 1em; */
+}
+
+.permit-heading {
+    /* border-bottom: 1px solid rgb(192, 192, 192); */
+    margin-bottom: 5px;
+}
+
+.permit-heading th {
+    padding: 13px 5px;
+    color: rgb(104, 103, 103);
+}

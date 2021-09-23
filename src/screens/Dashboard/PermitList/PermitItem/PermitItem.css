@@ -1,0 +1,47 @@
+.list-item a {
+ text-decoration: none;
+ color: black;
+}
+
+.list-item {
+    /* width: 100px;
+    height: 60px; */
+    border: 1px solid black;
+    margin: 10px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.item-content {
+    padding: 20px;
+}
+
+.item-title{
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.item-id {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.item-date {
+    font-size: 14px;
+
+}
+
+.permit-row {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  cursor: pointer;
+  /* border-bottom: 1px solid gray; */
+}
+.permit-row:hover {
+  top: -5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.permit-row td {
+    text-align: center;
+    padding: 13px 5px;
+}
